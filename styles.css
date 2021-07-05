@@ -1,0 +1,749 @@
+/*
+Colors: 
+    Green: #005200
+    Black: #191308
+    Grey: #666666
+    Light grey: #fdfaf9
+
+Fonts: 
+        font-family: 'Poppins', Helvetica, Arial, sans-serif
+        font-family: 'Raleway', Helvetica, Arial, sans-serif
+
+*/
+
+/********************************************************
+                    MOBILE PORTRAIT
+********************************************************/
+
+/* General */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+article {
+    margin: 0 1.2rem;
+}
+
+/* Header */
+header h2 {
+    padding: 1.2rem 0 1.2rem;
+    text-align: center;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+}
+
+header h2 span {
+    color: #005200;
+}
+
+/* Navigation */
+.main-menu {
+    background: #777778;
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+    height: 5.5rem;
+}
+
+.main-menu .logo {
+    width: 4rem;
+}
+
+.main-menu .actions .action {
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.main-menu .actions .action.hamburger {
+    width: 2rem;
+}
+
+.main-menu .actions .action.hamburger:focus {
+    outline: none;
+    border: none;
+}
+
+.main-menu .actions .action:not(:last-child) {
+    margin-right: 0.8rem;
+}
+
+.main-menu-desktop {
+    display: none;
+}
+
+.main-menu-mobile {
+    display: flex;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    background: #777778;
+}
+
+.main-menu-mobile.open {
+    opacity: 1;
+    max-height: 100%;
+    visibility: visible;
+    padding: 0 1.2rem 1.2rem;
+}
+
+.main-menu-mobile .main-menu-link {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu-mobile li:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+/* Body */
+
+/* Footer */
+footer {
+    background-color: #a2a1a2;
+    text-align: center;
+    padding: 1rem 1.2rem 2rem;
+}
+
+footer .footer-menu {
+    margin-bottom: 1rem;
+}
+
+footer .footer-menu .footer-menu-link {
+    color: #191308;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+footer .footer-menu li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+footer .socials {
+    margin-bottom: 1rem;
+}
+
+footer .socials .socials-link {
+    color: #191308;
+}
+
+footer .socials .socials-link:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/* Home Page */
+
+.announce {
+    margin: 1.2rem 1.2rem 1.5rem;
+    background-image: url('../img/background-main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 16.5rem;
+    text-align: center;
+    padding: 3.5rem 0 0;
+}
+
+.announce .announce-text {
+    margin-bottom: 1.8rem;
+}
+
+.announce .announce-title {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.announce .announce-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.announce .announce-time {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+}
+
+.announce .announce-time span {
+    font-weight: bold;
+}
+
+.announce .announce-link {
+    background: #3D773E;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0.4rem 2rem;
+}
+
+/* Dishes Line */
+.dishes-line {
+    margin-bottom: 1.5rem;
+}
+
+.dishes-line h3 {
+    text-align: center;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    color: #1E1E1F;
+    margin-bottom: 0.6rem;
+}
+
+.dishes-line .splide__arrow {
+    top: 7rem;
+    background: none;
+}
+
+.dishes-line .splide__arrow--prev {
+    left: 0;
+}
+
+.dishes-line .splide__arrow--next {
+    right: 0;
+}
+
+.dishes-line .splide__pagination {
+    display: none;
+}
+
+.dishes-line .dishes-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dishes-line .dishes-slide .slide-image {
+    margin: 0 auto 0.5rem;
+    width: 14rem;
+}
+
+.dishes-line .dishes-slide .slide-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.dishes-line .dishes-slide .slide-link {
+    width: min-content;
+    background: #3D773E;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0.4rem 2rem;
+}
+
+/* To the Top Button */
+.to-the-top {
+    background: #F2F1F1;
+    display: flex;
+    justify-content: center;
+}
+
+.to-the-top .to-the-top-button {
+    color: #D0CECE;
+}
+
+/* Menu Page */
+.menu {
+    margin: 1rem 1.2rem 1.2rem;
+    text-align: center;
+}
+
+.menu .menu-title {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    color: #1E1E1F;
+    margin-bottom: 0.6rem;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-mobile {
+    text-align: center;
+}
+
+.menu-mobile .menu-mobile-select {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #181819;
+    font-size: 1.3rem;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.menu-mobile .menu-mobile-select:focus {
+    outline: none;
+    border: none;
+}
+
+.menu-mobile .menu-mobile-variants {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-mobile.open .menu-mobile-variants {
+    visibility: visible;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.menu-mobile.open .menu-mobile-select i {
+    transform: rotate(180deg);
+}
+
+.menu-mobile.open .menu-mobile-variants {
+    padding: 1rem 0 1.2rem;
+}
+
+.menu-mobile .menu-mobile-variants li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.menu-mobile .menu-mobile-variants .menu-mobile-link {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #181819;
+    text-decoration: none;
+}
+
+/* Dishes Products */
+
+.dishes .dishes-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.dishes .dishes-product .product-image {
+    margin: 0 auto 0.5rem;
+    width: 14rem;
+}
+
+.dishes .dishes-product .product-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.dishes .dishes-product .product-link {
+    width: min-content;
+    background: #3D773E;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0.4rem 2rem;
+}
+
+/* Rewards page */
+
+.rewards {
+    padding: 1.2rem;
+}
+
+.rewards .rewards-title {
+    text-align: center;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.rewards .rewards-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rewards .rewards-content .rewards-img {
+    width: 14rem;
+    margin-bottom: 1.2rem;
+}
+
+.rewards .rewards-content .content-block {
+    margin-bottom: 1.2rem;
+}
+
+.rewards .rewards-content .content-block .block-title {
+    color: #2F5313;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.rewards .rewards-content .content-block .block-text {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    line-height: 1.2rem;
+}
+
+/* About Us page */
+.about-us {
+    margin: 1.2rem 1.2rem 3rem;
+}
+
+.about-us .about-us-title {
+    text-align: center;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-us .about-us-block {
+    margin-bottom: 1rem;
+}
+
+.about-us .about-us-block .block-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-us .about-us-block .block-text {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #1E1E1F;
+}
+
+/* Contact Us */
+.contact-us {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.contact-us .contact-us-title {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact-us .contacts {
+    margin-bottom: 1.2rem;
+}
+
+.contact-us .contacts p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+.contact-us .contacts p:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.contact-us .timings {
+    margin-bottom: 1.2rem;
+}
+
+.contact-us .timings p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+.contact-us .timings p:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.contact-us .socials a {
+    font-size: 3rem;
+    color: #1E1E1F;
+}
+
+.contact-us .socials a:not(:last-child) {
+    margin-right: 2rem;
+}
+
+#map {
+    height: 20rem;
+}
+
+/********************************************************
+                    Landscape phone and up
+********************************************************/
+
+@media only screen and (min-width: 480px) {}
+
+/********************************************************
+                    Portrait tablet and up
+********************************************************/
+@media only screen and (min-width: 768px) {
+
+    /* Header */
+    header h2 {
+        padding-bottom: 5rem;
+    }
+
+    .main-menu .container {
+        position: relative;
+    }
+
+    .main-menu .main-menu-desktop {
+        display: block;
+        flex: 1;
+    }
+
+    .main-menu .main-menu-desktop ul {
+        display: flex;
+    }
+
+    .main-menu .main-menu-desktop ul li a {
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        color: #FDFAF9;
+        text-decoration: none;
+    }
+
+    .main-menu .main-menu-desktop ul .separator {
+        width: 0.23rem;
+        height: 1.6rem;
+        background-color: #FCFAF9;
+        margin: 0 0.5rem;
+    }
+
+    .main-menu .logo-link {
+        position: absolute;
+        left: calc(50% - 2rem);
+        top: -4.2rem;
+    }
+
+    .main-menu .actions #main-hamburger,
+    .main-menu-mobile {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 1.2rem 3rem;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        height: 4.5rem;
+    }
+
+    footer .copyright {
+        position: absolute;
+        left: calc(50% - 9rem);
+        bottom: 0;
+        font-weight: bold;
+    }
+
+    footer .footer-menu,
+    footer .socials {
+        margin-bottom: 2.5rem;
+    }
+
+    footer .footer-menu ul {
+        display: flex;
+    }
+
+    footer .footer-menu ul li:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    /* Home page */
+    .announce {
+        margin: 0 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 26rem;
+        padding: 7rem 0 0;
+        background-image: url('../img/background-main-desktop.png');
+    }
+
+    .announce .announce-text {
+        border: 1px solid #0000002b;
+        padding: 1rem 3rem;
+        background-color: #ffffff70;
+    }
+
+    .announce .announce-title {
+        font-size: 2.5rem;
+    }
+
+    .announce .announce-subtitle {
+        font-size: 2.1rem;
+    }
+
+    .announce .announce-time {
+        font-size: 2rem;
+    }
+
+    /* Menu page */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 1.2rem 3rem;
+    }
+
+    .menu .menu-mobile {
+        display: none;
+    }
+
+    .menu .menu-desktop {
+        display: block;
+    }
+
+    .menu .menu-desktop ul {
+        display: flex;
+    }
+
+    .menu .menu-desktop ul li:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .menu .menu-desktop .menu-desktop-link {
+        font-family: 'Poppins', Helvetica, Arial, sans-serif;
+        font-size: 1.3rem;
+        color: #181819;
+        text-decoration: none;
+    }
+
+    .menu .menu-desktop .menu-desktop-link.active {
+        text-decoration: underline;
+    }
+
+    .dishes .dishes-product {
+        display: inline-flex;
+        width: calc(49% - 2rem);
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Rewards page */
+    .rewards {
+        min-height: calc(100vh - 26.57rem);
+    }
+
+    .rewards .rewards-content {
+        flex-direction: row;
+    }
+
+    .rewards .rewards-content .content-block {
+        margin-left: 2rem;
+    }
+
+    /* About Us page */
+    .about-us {
+        margin: 2rem 1.2rem 3rem;
+    }
+
+    .about-us .about-us-block {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    .about-us .about-us-block:nth-child(3n) {
+        flex-direction: row-reverse;
+    }
+
+    .about-us .about-us-block .block-image {
+        width: 50%;
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+
+    .about-us .about-us-block:nth-child(3n) .block-image {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+
+    .about-us .about-us-block .block-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Contact Us page */
+    .contact-us {
+        padding: 2rem 1.2rem 4rem;
+    }
+
+    .contact-us .contact-us-title {
+        margin-bottom: 2rem;
+    }
+}
+
+/********************************************************
+                    Standart desktop (17'') and up
+********************************************************/
+@media only screen and (min-width: 960px) {
+
+    /* Base */
+    .container {
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+    /* To the Top */
+    .to-the-top {
+        display: none;
+    }
+
+    /* Home page */
+    .announce {
+        height: 30rem;
+    }
+
+    .dishes-line {
+        margin-bottom: 2.5rem;
+    }
+
+    /* Menu page */
+
+    .dishes .dishes-product {
+        display: inline-flex;
+        width: calc(33% - 2rem);
+    }
+}
+
+/********************************************************
+                Widescreen desktop (24'') and up
+********************************************************/
+@media only screen and (min-width: 1160px) {}
