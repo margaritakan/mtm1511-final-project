@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee shop Rush Lunch</title>
+    <meta name="description" content="Coffee shop Rush Lunch website">
+    <meta name="keywords" content="coffee, lunch, food">
+    <meta name="author" content="Margarita Kan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    Reset.CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--    Splide Slider -->
+    <link rel="stylesheet" href="css/plugins/splide/splide.min.css">
+
+    <!--    Links to Remote Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My own Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--    header-->
+    <header>
+        <h2>Rush <span>Lunch</span></h2>
+        <section class="main-menu">
+            <section class="container">
+                <nav class="main-menu-desktop">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li>
+                            <a href="html/menu.html">Menu</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li>
+                            <a href="html/rewards.html">Rewards</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li>
+                            <a href="html/about-us.html">About Us</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li>
+                            <a href="html/contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="logo-link" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="Logo">
+                </a>
+                <section class="actions">
+                    <button class="action"><i class="fas fa-2x fa-search"></i></button>
+                    <button class="action"><i class="fas fa-2x fa-shopping-cart"></i></button>
+                    <button class="action" id="main-hamburger"><i class="fas fa-2x fa-bars"></i></button>
+                </section>
+            </section>
+        </section>
+        <nav class="main-menu-mobile" id="main-menu-mobile">
+            <ul>
+                <li>
+                    <a class="main-menu-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="main-menu-link" href="html/menu.html">Menu</a>
+                </li>
+                <li>
+                    <a class="main-menu-link" href="html/rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a class="main-menu-link" href="html/about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a class="main-menu-link" href="html/contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END of header -->
+
+    <!-- main -->
+    <main>
+
+        <section class="announce">
+            <section class="announce-text">
+                <p class="announce-title">Discount 5%</p>
+                <p class="announce-subtitle">for lunch boxes</p>
+                <p class="announce-time">from <span>11:59 AM</span> to <span>2PM</span></p>
+            </section>
+            <a class="announce-link" href="html/menu.html">SELECT</a>
+        </section>
+
+        <article>
+            <section class="container">
+                <section class="dishes-line">
+                    <h3>New</h3>
+                    <!-- SPLIDE SLIDER JS -->
+                    <div class="splide" id="splide-new">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-8.jpg" alt="dish-1-slider-new">
+                                    <p class="slide-text">Crispy fish with french fries and salad as the side.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-3.jpg" alt="dish-2-slider-new">
+                                    <p class="slide-text">Nutrititious salmon sandwich on the italian herbs bread.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-7.jpg" alt="dish-3-slider-new">
+                                    <p class="slide-text">Mussles is a sought-after delicacy for the real connoisseurs of food.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-12.jpg" alt="dish-4-slider-new">
+                                    <p class="slide-text">Fried eggs, tomatoes and salmon on the buns dressed with our special sause.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END OF SPLIDE SLIDER JS -->
+                </section>
+
+                <section class="dishes-line">
+                    <h3>Best</h3>
+                    <!--       SPLIDE SLIDER JS -->
+                    <div class="splide" id="splide-best">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-1.jpg" alt="dish-1-slider-best">
+                                    <p class="slide-text">Tasty avocado toast on the crunchy bread with sweet tomato on the top.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-4.jpg" alt="dish-2-slider-best">
+                                    <p class="slide-text">Avocado sandwich on the crunchy bread with the hot poached egg.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-9.jpg" alt="dish-3-slider-best">
+                                    <p class="slide-text">Hot and nutritious salad is ideal for the lunch.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+
+                                <li class="splide__slide dishes-slide">
+                                    <img class="slide-image" src="img/dish-10.jpg" alt="dish-4-slider-best">
+                                    <p class="slide-text">Fried eggs, side of tomatoes and green.</p>
+                                    <a class="slide-link" href="#">SELECT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--       END OF SPLIDE SLIDER JS -->
+                </section>
+            </section>
+        </article>
+    </main>
+    <!-- END of main -->
+
+    <!--   To the Top button-->
+    <section class="to-the-top">
+        <a class="to-the-top-button" href="#top">
+            <i class="fas fa-2x fa-angle-up"></i>
+        </a>
+    </section>
+    <!--    END of To the Top button-->
+
+    <!-- footer-->
+    <footer>
+        <section class="container">
+            <nav class="footer-menu">
+                <ul>
+                    <li>
+                        <a class="footer-menu-link" href="html/menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a class="footer-menu-link" href="html/rewards.html">Rewards</a>
+                    </li>
+                    <li>
+                        <a class="footer-menu-link" href="html/about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footer-menu-link" href="html/contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="socials">
+                <a href="#" class="socials-link"><i class="fab fa-2x fa-instagram"></i></a>
+                <a href="#" class="socials-link"><i class="fab fa-2x fa-twitter"></i></a>
+                <a href="#" class="socials-link"><i class="fab fa-2x fa-facebook"></i></a>
+            </section>
+            <p class="copyright">All right Reserved. &copy; Copyright 2021.</p>
+        </section>
+    </footer>
+    <!-- END of footer -->
+
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/ccf0b0f929.js" crossorigin="anonymous"></script>
+
+    <!--   SPLIDE PLUGIN -->
+    <!--   1. Load Splide JS -->
+    <script src="js/splide/splide.min.js"></script>
+
+    <!--   2. Load initializing script -->
+    <script src="js/splide/splide.init.js"></script>
+    <!-- END of SPLIDE PLUGIN -->
+
+    <script type="text/javascript" src="js/main-menu-mobile.js"></script>
+</body>
+<!-- END of the body-->
+
+</html>
